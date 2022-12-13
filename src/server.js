@@ -171,7 +171,7 @@ server.get('/customers/:id', async (req, res) => {
             return;
         }
 
-        res.send(rows);
+        res.send(rows[0]);
     } catch {
         res.sendStatus(500);
     }
